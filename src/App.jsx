@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import SearchIcon from "./search.svg";
 // a7853474;
 import MovieCard from "./components/MovieCard";
-const API_URL = "http://www.omdbapi.com/?apikey=a7853474";
+const API_URL = import.meta.env.VITE_APP_OMDB_API_URL;
 const movie1 = {
   Title: "Amazing Spiderman Syndrome",
   Year: "2012",
